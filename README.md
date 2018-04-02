@@ -1,4 +1,4 @@
-# rest-api
+## rest-api
 simple rest api with express and MVC
 
 Route                   HTTP  Description
@@ -19,7 +19,7 @@ Route                     HTTP  Description
 /api/users?name="{name}"  GET   Get {name} match in users
 /api/users?name="{na}"    GET   Get {na} like in user
 
-Usage
+## Usage
 With only npm :
 
 ```javascript
