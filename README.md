@@ -5,12 +5,12 @@ simple rest api with express and MVC
 
 List of basic routes:
 
-<span style="color:orange;">Word up</span>
+<span style="color:red;">Word up</span>
 
 **Route**| **HTTP** | **Description**
 ------------ | ------------- | -------------
 /api/hello?name={name} | GET | Print hello, {name} !
- 
+
 List of user routes:
 
 **Route** | **HTTP** | **Description**
