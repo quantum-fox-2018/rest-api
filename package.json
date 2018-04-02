@@ -1,6 +1,6 @@
 {
   "name": "rest-api",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "engines": {
     "node": "8.9.4"
   },
@@ -23,10 +23,5 @@
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.37.5",
     "typescript": "~2.3.3"
-  },
-  "devDependencies": {
-    "@angular/cli": "^1.7.3",
-    "@angular/compiler-cli": "^5.2.9",
-    "enhanced-resolve": "^3.3.0"
   }
 }
