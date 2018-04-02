@@ -4,9 +4,10 @@ simple rest api with express and MVC
 # REST API:
 
 List of basic routes:
-<p style='color:red'>This is some red text.</p>
 
-<font color="red">**Route**</font> | **HTTP** | **Description**
+<span style="color:orange;">Word up</span>
+
+**Route**| **HTTP** | **Description**
 ------------ | ------------- | -------------
 /api/hello?name={name} | GET | Print hello, {name} !
 
@@ -28,13 +29,13 @@ List of filter routes:
 /api/users?name="{name}"  | GET | Get {name} match in users
 /api/users?name="{na}" | GET | Get {na} like in user
 
-##**Usage**
-####With only npm:
+## **Usage**
+#### With only npm:
 
 npm install
 npm start
 npm run dev
 
 
-###Access the website via http://localhost:3000 or API via
+### Access the website via http://localhost:3000 or API via
 http://localhist:3000/api.
