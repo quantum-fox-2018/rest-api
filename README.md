@@ -6,9 +6,9 @@ A RESTful API is an application program interface (API) that uses HTTP requests 
 
 ## This program will be using :
 
-### 1. Express
-### 2. Sequelize
-### 3. PostgreSQL
+1. Express
+2. Sequelize
+3. PostgreSQL
 
 ## The Routes
 
