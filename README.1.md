@@ -49,6 +49,10 @@ Access the website via [http://localhost:3000](https:www.google.com) or API via 
 
 
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+```diff
++ this will be highlighted in green
+- this will be highlighted in red
+```
 
 BlockQuotes
 > Fitrul mau menguasai dunia
