@@ -14,15 +14,17 @@ module.exports = {
           role: req.body.role 
         })
         .then(userData => {
-          res.status(201).send({
+          res.status(201).json({
             messages: 'Create user success',
             data: userData
           });
         })
         .catch(err => {
-          res.status(400).send({
+          console.log(err);
+      
+          res.status(500).json({
             messages: 'Create user failed',
-            detail: err.messages
+            detail: err.message
           });
         })
       })
@@ -55,9 +57,9 @@ module.exports = {
       })
     })
     .catch(err => {
-      res.status(400).send({
+      res.status(500).json({
         messages: 'User not found',
-        detail: err.messages
+        detail: err.message
       })
     })
   },
@@ -65,15 +67,15 @@ module.exports = {
   getAllUsers: function (req, res) {
     models.User.findAll()
     .then(userData => {
-      res.status(200).send({
+      res.status(200).json({
         messages: 'User(s) found',
         data: userData
       })
     })
     .catch(err => {
-      res.status(400).send({
+      res.status(500).json({
         messages: 'User not found',
-        detail: err.messages
+        detail: err.message
       })
     })
   },
@@ -81,15 +83,15 @@ module.exports = {
   getUserById: function (req, res) {
     models.User.findById(req.params.id)
     .then(userData => {
-      res.status(200).send({
+      res.status(200).json({
         messages: 'User found',
         data: userData
       })
     })
     .catch(err => {
-      res.status(400).send({
+      res.status(500).json({
         messages: 'User not found',
-        detail: err.messages
+        detail: err.message
       })
     })
   },
@@ -110,9 +112,9 @@ module.exports = {
       })
     })
     .catch(err => {
-      res.status(400).json({
+      res.status(500).json({
         messages: 'Update data user failed',
-        detail: err.messages
+        detail: err.message
       })
     })
   },
@@ -122,15 +124,15 @@ module.exports = {
       where: { id: req.params.id }
     })
     .then(success => {
-      res.status(200).send({
+      res.status(200).json({
         messages: 'Delete user success',
         data: success
       })
     })
     .catch(err => {
-      res.status(400).send({
+      res.status(500).json({
         messages: 'Delete user failed, data not found',
-        detail: err.messages
+        detail: err.message
       })
     })
   }
