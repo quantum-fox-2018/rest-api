@@ -8,7 +8,6 @@ class UserController {
     static readAll(req, res) {
         User.findAll()
         .then(data => {
-            // res.send(data)
             res.status(200).json({
                 message: 'Daftar data berhasil didapatkan',
                 data
@@ -36,7 +35,6 @@ class UserController {
                 err
             })
         })
-        
     }
 
     static createUser(req, res) {

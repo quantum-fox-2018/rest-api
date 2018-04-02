@@ -8,13 +8,13 @@ router.get('/hello', (req, res) => {
 })
 
 router
-    .post('/signup', User.createUser) // jalan
-    .post('/signin', User.signIn) // jalan
-    .get('/users',auth.cekAdminRole, User.readAll) // jalan
-    .post('/users', User.createUser) // jalan
-    .get('/users/:id', User.readOne) // jalan
-    .delete('/users/:id', User.delete) // jalan
-    .put('/users/:id', User.update) // jalan
+    .post('/signup', User.createUser)
+    .post('/signin', User.signIn)
+    .get('/users',auth.cekAdminRole , User.readAll)
+    .get('/users/:id', User.readOne)
+    .post('/users',auth.cekAdminRole, User.createUser)
+    .delete('/users/:id',auth.cekAdminRole, User.delete)
+    .put('/users/:id', User.update)
 
 
 module.exports = router;
