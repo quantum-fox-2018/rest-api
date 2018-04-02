@@ -25,4 +25,10 @@ npm start / nodemon start
 
 ```
 
+You need adding .env file for secret key. Example:
+
+```
+SECRET='funnykitten'
+```
+
 Access the website via http://localhost:3000 or API via http://localhost:3000/api
