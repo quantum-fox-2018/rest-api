@@ -4,12 +4,12 @@ Demo app with basic REST API.
 # REST API
 List of basic routes:
 | Route        | HTTP           | Desription  |
-| ------------- |:-------------:| -----:|
+| ------------- |-------------| -----|
 | /api/hello?name={name}      | GET | Print hello, {name} ! |
 
 List of user routes:
 | Route        | HTTP           | Desription  |
-| ------------- |:-------------:| -----:|
+| ------------- |-------------| -----|
 | /api/users      | GET | Get all the users |
 | /api/users/:id      | GET | Get a single user |
 | /api/users      | POST | Create a user |
@@ -19,7 +19,7 @@ List of user routes:
 
 List of filter routes:
 | Route        | HTTP           | Desription  |
-| ------------- |:-------------:| -----:|
+| ------------- |-------------| -----|
 | /api/users?name="{name}"      | GET | Get {name} match in users |
 | /api/users?name="{na}"      | GET | Get {na} like in users |
 
