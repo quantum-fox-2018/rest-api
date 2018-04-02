@@ -4,7 +4,8 @@ const User = require('../controllers/users.controller');
 const auth = require('../middleware/auth')
 
 router.get('/hello', (req, res) => {
-    res.json(`Print hello, ${req.query.name}`)
+    // res.json(`Print hello, ${req.query.name}`)
+    res.send('Masuk ke halaman Dashboard')
 })
 
 router
