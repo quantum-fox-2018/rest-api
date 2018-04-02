@@ -14,5 +14,5 @@ app.use('/', index)
 app.use('/api', api)
 
 app.listen(port,function(req,res){
-  console.log(`App listen on ${PORT}`)
+  console.log(`App listen on ${port}`)
 })
