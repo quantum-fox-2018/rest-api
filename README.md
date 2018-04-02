@@ -2,7 +2,7 @@
 
 ### Demo REST API with express and MVC
 
-### A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. This program will demonstrating REST API using Express
+A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. This program will demonstrating REST API using Express
 
 ## This program will be using :
 
