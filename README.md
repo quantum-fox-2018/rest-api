@@ -8,7 +8,7 @@ List of basic routes:
 |:------:|:------:|:------------:|
 |<span style="color: red">/api/hello??name={name}</span>|GET|Print hello, {name} !|
 
-List of user routes:
+<span style="color: red">List of user routes: </span>
 
 |Route|HTTP|Description|
 |:---:|:---:|:---:|
