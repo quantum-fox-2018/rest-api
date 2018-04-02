@@ -9,8 +9,6 @@ Demo app with basic REST API.
 
 List of basic routes:
 
-<span style="color:red;">Word up</span>
-
 **Route**| **HTTP** | **Description**
 ------------ | ------------- | -------------
 /api/hello?name={name} | GET | Print hello, {name} !
