@@ -18,6 +18,7 @@ List of basic routes:
 List of user routes:
 
 | Route | HTTP | Description |
+| --- | --- | --- |
 | /api/users | GET | Get all the users |
 | /api/users/:id | GET | Get a single user |
 | /api/users | POST | create a user |
@@ -28,6 +29,7 @@ List of user routes:
 List of filter routes:
 
 | Route | HTTP | Description |
+| --- | --- | --- |
 | /api/users?name="{name}" | GET | Get {name} match in users |
 | /api/users?name="{na}" | GET | Get {na} like in users |
 
@@ -43,10 +45,11 @@ npm run dev
 ```
 
 
-Access the website via [http://localhost:3000] (https:www.google.com) or API via [http:localhost:3000/api] (www.google.com)
+Access the website via [http://localhost:3000](https:www.google.com) or API via [http:localhost:3000/api](www.google.com)
+
 
 BlockQuotes
-> Fitrul mau menguasai duni
+> Fitrul mau menguasai dunia
 
 
 
