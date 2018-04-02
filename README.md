@@ -1,7 +1,7 @@
-### My App Name
+# My App Name
 Demo App with basic REST API
 
-#### REST API
+## REST API
 List of basic routes:
 
 | Route                  | HTTP | Description          |
@@ -23,5 +23,5 @@ List of filter routes:
 
 Route | HTTP | Description
 --- | --- | ---
-<span style="color:red">/api/users?name="{name}"</span> | GET | Get {name} match in users
+/api/users?name="{name}" | GET | Get {name} match in users
 /api/users?name="{na}" | GET | Get {na} like in users
