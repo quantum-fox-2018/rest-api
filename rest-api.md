@@ -10,7 +10,7 @@ Demo app with basic REST API.
 #### List of user routes:
 |**Route**|**HTTP**|**Description**|
 |---------|--------|---------------|
-|/api/users|GET|Geat all the users|
+|/api/users|GET|Get all the users|
 |/api/users/:id|GET|get a single user|
 |/api/users|POST|Create a user|
 |/api/users/:id|DELETE|Delete a user|
