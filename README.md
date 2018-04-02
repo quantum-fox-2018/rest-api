@@ -1,33 +1,27 @@
-# My App Name
+# Phase 2, Day 1
 Demo app with basic REST API.
+1. Model CRUD using Sequelize, Postgres
+2. Controller CRUD
+3. Routing
+4. Sign Up User
+5. Sign In User and Authentication Token User
+6. Deploy to Heroku
 
-# rest-api
-List of basic routes:
 
-| Route                  | HTTP | Description           |
-|------------------------|------|-----------------------|
-| /api/hello?name={name} | GET  | Print hello, <font color="red">{name}</font> ! |
-
+# REST API with Authentication
 List of user routes:
 
 Route                                   | HTTP   | Description
 ----------------------------------------|--------|---------------------------------------
-<font color="red">/api/users</font>     | GET    | Get all the users
-<font color="red">/api/users/:id</font> | GET    | Get a single user
-<font color="red">/api/users</font>     | POST   | Create a user
-<font color="red">/api/users/:id</font> | DELETE | Delete a user
-<font color="red">/api/users/:id</font> | PUT    | Update a user with new info
-<font color="red">/api/users/:id</font> | PATCH  | Update a user witch spesific new info
-
-List of filter routes:
-
-Route                                             | HTTP | Description
---------------------------------------------------|------|----------------------------------------------------
-<font color="red">/api/users?name="{name}"</font> | GET  | Get <font color="red">{name}</font> match in users
-<font color="red">/api/users?name="{na}"</font>   | GET  | Get <font color="red">{na}</font> match in users
+<font color="red">/api/signup</font>     | POST   | Sign up with new user info
+<font color="red">/api/signin</font>     | POST   | Sign in while get an access token based on credentials
+<font color="red">/api/users</font>     | GET    | Get all the users info (admin only)
+<font color="red">/api/users/:id</font> | GET    | Get a single user info (admin and auhenticated user)
+<font color="red">/api/users</font>     | POST   | Create a user (admin only)
+<font color="red">/api/users/:id</font> | DELETE | Delete a user (admin only)
+<font color="red">/api/users/:id</font> | PUT    | Update a user with new info (admin and authenticated user)
 
 # Usage
-
 With only npm:
 
 ```
