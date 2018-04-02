@@ -25,3 +25,12 @@ Route | HTTP | Description
 `/api/users/:id` | PUT | Update a user with a new info (admin and authenticated user)
 
 
+## Usage
+
+### with only npm :
+
+```
+npm install
+npm start
+npm run dec
+```
