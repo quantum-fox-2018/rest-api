@@ -1,13 +1,13 @@
 # My App Name
-### Demo app with basic REST API
+Demo app with basic REST API
 ## REST API
-### List of basic routes:
+List of basic routes:
 
 **Route** | **HTTP** | **Description**
 --------- | -------- | ---------------
 /api/hello?name={name} | GET | Print hello, {name} !
 
-### List of user routes:
+List of user routes:
 
 **Route** | **HTTP** | **Description**
 --------- | -------- | ---------------
@@ -26,7 +26,7 @@
 /api/users?name="{na}" | GET | Get {na} like in users
 
 ## Usage
-### With only npm:
+With only npm:
 
 ```
 npm install
@@ -34,4 +34,4 @@ npm start
 npm run dev
 ```
 
-Access the website via [http://localhost:3000] or API via [http:localhost:3000/api].
+Access the website via ```http://localhost:3000``` or API via ```http://localhost:3000/api```.
