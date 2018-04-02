@@ -39,16 +39,17 @@ class User {
     })
   }
 
-  static create(req,res){
+  static createAdmin(req,res){
     let password = bcrypt.hashSync(req.body.password,salt)
     let obj = {
       username: req.body.username,
-      password: password
+      password: password,
+      role: 'admin'
     }
     userSchema.create(obj)
     .then(user=>{
       res.status(200).json({
-        message:'user created successfully',
+        message:'admin created successfully',
         user
       })
     })
@@ -104,8 +105,68 @@ class User {
     })
   }
 
-  static signin(req,res){
+  static signup(req,res){
+    let password = bcrypt.hashSync(req.body.password,salt)
+    let obj = {
+      username:req.body.username,
+      password:password,
+      role:'user'
+    }
+    userSchema.create(obj)
+    .then(user=>{
+      res.status(200).json({
+        message:'user created'
+      })
+    })
+    .catch(err=>{
+      res.status(500).json({
+        message:'something went wrong',
+        err
+      })
+    })
+  }
 
+  static signin(req,res){
+    let target = {
+      username:req.body.username
+    }
+    userSchema.findOne(target)
+    .then(user=>{
+      if(user){
+        let clarify = bcrypt.compareSync(req.body.password,user.password)
+        if(clarify){  
+          let payload = {
+            id:user._id,
+            name:user.username,
+            role:user.role
+          }
+          jwt.sign(payload,'secret key',(err,token)=>{
+            if(!err){
+              res.status(200).json({
+                message:'login success',
+                token:token,
+                id:user._id,
+                role:user.role,
+                name:user.username
+              })
+            } else {
+              res.status(401).json({
+                message:'login failed',
+                err
+              })
+            }
+          })
+        } else {
+          res.status(403).json({
+            message:'your password is wrong'
+          })
+        }
+      } else {
+        res.status(500).json({
+          message:'username is not found'
+        })
+      }
+    })
   }
 }
 
