@@ -19,11 +19,6 @@ List of user routes:
 | /api/users/:id | PUT | Update a user with new info |
 | /api/users/:id | PATCH | Update a user with specific new info |
 
-List of filter routes:
-| **Route** | **HTTP** | **Description** |
-| --- | --- | --- |
-| ```/api/users?name="{name}"``` | GET | Get {name} match in users |
-| ```/api/users?name="{na}"``` | GET | Get {name} match in users |
 
 Usage
 with only npm:
