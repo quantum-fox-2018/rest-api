@@ -6,22 +6,22 @@ List of basic routes:
 
 **Route**|**HTTP**|**Description**
 ---|---|---
-/api/hello?name={name}|GET|Print hello, {name} !
+<font color="red">/api/hello?name={name}</font>|GET|Print hello, <font color="red">{name}</font> !
 
 List of user routes:
 
 **Route**|**HTTP**|**Description**
 ---|---|---
-/api/users|GET|Get all the users
-/api/users/:id|GET|Get a single user
-/api/users|POST|Create a user
-/api/users/:id|DELETE|Delete a user
-/api/users/:id|PUT|Update a user with new info
-/api/users/:id|PATCH|Update a user with specific new info
+<font color="red">/api/users</font>|GET|Get all the users
+<font color="red">/api/users/:id</font>|GET|Get a single user
+<font color="red">/api/users</font>|POST|Create a user
+<font color="red">/api/users/:id</font>|DELETE|Delete a user
+<font color="red">/api/users/:id</font>|PUT|Update a user with new info
+<font color="red">/api/users/:id</font>|PATCH|Update a user with specific new info
 
 List of filter routes:
 
 **Route**|**HTTP**|**Description**
 ---|---|---
-/api/users?name="{name}"|GET|Get {name} match in users
-/api/users?name="{na}"|GET|Get {na} like users
+<font color="red">/api/users?name="{name}"</font>|GET|Get <font color="red">{name}</font> match in users
+<font color="red">/api/users?name="{na}"</font>|GET|Get <font color="red">{na}</font> like users
