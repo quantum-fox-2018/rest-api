@@ -23,6 +23,10 @@ List of filter routes:
 | /api/users?name="{name}"      | GET | Get {name} match in users |
 | /api/users?name="{na}"      | GET | Get {na} like in users |
 
+| Column 1 | Column 2 | Column 3 | Column 4 |
+|----------|:---------|:--------:|---------:|
+| default  | left     | center   | right    |
+
 #Usage
 WIth only npm:
 ```
