@@ -48,9 +48,10 @@ npm run dev
 Access the website via [http://localhost:3000](https:www.google.com) or API via [http:localhost:3000/api](www.google.com)
 
 
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+
 BlockQuotes
 > Fitrul mau menguasai dunia
-
 
 
 Horizontal Rule
