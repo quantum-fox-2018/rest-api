@@ -31,4 +31,4 @@ You need adding .env file for secret key. Example:
 SECRET='funnykitten'
 ```
 
-Access the website via http://localhost:3000 or API via http://localhost:3000/api
+Access the website via [demo-aps](https://immense-dusk-16946.herokuapp.com/) or API via http://localhost:3000/api
