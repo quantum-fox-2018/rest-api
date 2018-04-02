@@ -6,7 +6,7 @@ List of basic routes:
 
 | **Route** | **HTTP** | **Description** |
 | --- | --- | --- |
-| <span style ="color:red">``` /api/hello?name={name}```</span> | GET | Print Hello, ```{name}``` ! |
+| ```/api/hello?name={name}```| GET | Print Hello, ```{name}``` ! |
 
 List of user routes:
 
@@ -36,6 +36,5 @@ Access the website via ```http://localhost:3000``` or API via
 ```http://localhost:3000/api```
 
 ```diff
-+ this will be highlighted in green
-- this will be highlighted in red
+- /api/hello?name={name}
 ```
