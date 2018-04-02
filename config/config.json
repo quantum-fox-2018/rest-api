@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "yosa",
+    "password": "123456",
+    "database": "restapi",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "hofomthztolxda",
+    "password": "92ad36b9c6ad21ce68dec0f13e0d173a8daa93efbb0a9847599f420cc380381c",
+    "database": "d302ug14smfvoi",
+    "host": "ec2-107-21-126-193.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}

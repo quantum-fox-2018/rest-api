@@ -1,0 +1,29 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "Demo app with basic REST API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yohanessahrul/rest-api.git"
+  },
+  "author": "yohanessahrul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yohanessahrul/rest-api/issues"
+  },
+  "homepage": "https://github.com/yohanessahrul/rest-api#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "heroku-cli": "^6.16.3",
+    "jsonwebtoken": "^8.2.0",
+    "pg": "^7.4.1",
+    "sequelize": "^4.37.5"
+  }
+}
