@@ -23,5 +23,5 @@ List of filter routes:
 
 Route | HTTP | Description
 --- | --- | ---
-/api/users?name="{name}" | GET | Get {name} match in users
+<span style="color:red">/api/users?name="{name}"</span> | GET | Get {name} match in users
 /api/users?name="{na}" | GET | Get {na} like in users
