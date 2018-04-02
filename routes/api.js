@@ -16,5 +16,4 @@ router
     .delete('/users/:id',auth.cekAdminRole, User.delete)
     .put('/users/:id', User.update)
 
-
 module.exports = router;
