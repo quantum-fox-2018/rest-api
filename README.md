@@ -2,16 +2,17 @@
 simple rest api with express and MVC
 
 # REST API:
-## List of basic routes:
+
+List of basic routes:
 
 
-Route | HTTP | Description
+<font color="red">**Route** | **HTTP** | **Description**
 ------------ | ------------- | -------------
 /api/hello?name={name} | GET | Print hello, {name} !
 
-##List of user routes:
+List of user routes:
 
-Route        | HTTP          | Description
+**Route** | **HTTP** | **Description**
 ------------ | ------------- | -------------
 /api/users   | GET | Get all the users
 /api/users/:id | GET | Get a single user
@@ -20,15 +21,15 @@ Route        | HTTP          | Description
 /api/users/:id | PUT | Update a user with new info
 /api/users/:id | PATCH | Update a user with specific new info
 
-##List of filter routes:
+List of filter routes:
 
-Route        | HTTP          | Description
+**Route** | **HTTP** | **Description**
 ------------ | ------------- | -------------
 /api/users?name="{name}"  | GET | Get {name} match in users
 /api/users?name="{na}" | GET | Get {na} like in user
 
-## Usage
-### With only npm:
+##**Usage**
+With only npm:
 
 
 ###Access the website via http://localhost:3000 or API via http://localhist:3000/api.
