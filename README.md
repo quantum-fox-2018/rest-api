@@ -6,7 +6,7 @@ List of basic routes:
 
 | **Route** | **HTTP** | **Description** |
 | --- | --- | --- |
-| /api/hello?name={name} | GET | Print Hello, {name} ! |
+| ```/api/hello?name={name}``` | GET | Print Hello, ```{name}``` ! |
 
 List of user routes:
 
@@ -31,5 +31,5 @@ npm start
 npm run dev
 ```
 
-Access the website via http://localhos:3000 or API via
-http://localhost:3000/api
+Access the website via ```http://localhost:3000``` or API via
+```http://localhost:3000/api```
