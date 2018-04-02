@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 var usersroute = require('./routes/users')
 var mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/restapi1')
+mongoose.connect('mongodb://restapi1:123456@ds231589.mlab.com:31589/restapi')
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -14,4 +14,4 @@ app.use(express.static('public'))
 
 app.use('/api', usersroute)
 
-app.listen(4000,console.log('connect to express'))
+app.listen(3000,console.log('connect to express'))
