@@ -34,4 +34,4 @@ npm start
 npm run dev
 ```
 
-Access the website via ```http://localhost:3000``` or API via ```http://localhost:3000/api```.
+Access the website via ```http://localhost:3000``` or API via ```https://whispering-journey-92706.herokuapp.com/```.

@@ -20,7 +20,7 @@ module.exports = {
         data: req.body
       })
     }).catch(err=>{
-      res.status(404).json({
+      res.status(400).json({
         message: `Create user failed`
       })
     })
