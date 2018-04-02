@@ -5,25 +5,25 @@ List of basic routes:
 
 **Route** | **HTTP** | **Description**
 --------- | -------- | ---------------
-/api/hello?name={name} | GET | Print hello, {name} !
+<span style:"color:red">/api/hello?name={name}</span> | GET | <span style:"color:red">Print hello, {name}</span> !
 
 List of user routes:
 
 **Route** | **HTTP** | **Description**
 --------- | -------- | ---------------
-/api/users | GET | Get all the users
-/api/users/:id | GET | Get a single user
-/api/users | POST | Create a user
-/api/users:id | DELETE | Delete a user
-/api/users:id | PUT | Update a user with new info
-/api/users:id | PATCH | Update a user with spesific new info
+<span style:"color:red">/api/users</span> | GET | Get all the users
+<span style:"color:red">/api/users/:id</span> | GET | Get a single user
+<span style:"color:red">/api/users</span> | POST | Create a user
+<span style:"color:red">/api/users:id</span> | DELETE | Delete a user
+<span style:"color:red">/api/users:id</span> | PUT | Update a user with new info
+<span style:"color:red">/api/users:id</span> | PATCH | Update a user with spesific new info
 
 ### List of filter routes:
 
 **Route** | **HTTP** | **Description**
 --------- | -------- | ---------------
-/api/users?name="{name}" | GET | Get {name match in users}
-/api/users?name="{na}" | GET | Get {na} like in users
+<span style:"color:red">/api/users?name="{name}"</span> | GET | Get <span style:"color:red">{name}</span> match in users
+<span style:"color:red">/api/users?name="{na}"</span> | GET | Get <span style:"color:red">{na}</span> like in users
 
 ## Usage
 With only npm:
@@ -34,4 +34,4 @@ npm start
 npm run dev
 ```
 
-Access the website via ```http://localhost:3000``` or API via ```http://localhost:3000/api```.
+Access the website via ```<span style:"color:red">http://localhost:3000</span>``` or API via ```<span style:"color:red">http://localhost:3000/api</span>```.
