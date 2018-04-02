@@ -1,0 +1,22 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "simple rest-api using express, sequelize and postgreSql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rg872/rest-api.git"
+  },
+  "author": "Rafie Gilang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rg872/rest-api/issues"
+  },
+  "homepage": "https://github.com/rg872/rest-api#readme",
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
+}
