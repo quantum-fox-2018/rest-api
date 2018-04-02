@@ -6,7 +6,7 @@ List of basic routes:
 
 | Route | HTTP | Desription |
 |----------|:-----|:------------:|
-|![#f03c15] /api/hello?name={name} `#f03c15` | GET     | Print hello, <span style="color:red">{name}</span> !   |
+|<span style="color:red">/api/hello?name={name}</span>  | GET     | Print hello, <span style="color:red">{name}</span> !   |
 
 List of user routes:
 
