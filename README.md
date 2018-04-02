@@ -1,6 +1,10 @@
 # rest-api
 simple rest api with express and MVC
 
+# My App Name
+
+Demo app with basic REST API.
+
 # REST API:
 
 List of basic routes:
@@ -29,13 +33,14 @@ List of filter routes:
 /api/users?name="{name}"  | GET | Get {name} match in users
 /api/users?name="{na}" | GET | Get {na} like in user
 
-## **Usage**
-#### With only npm:
+### **Usage**
+With only npm:
 
+```
 npm install
 npm start
 npm run dev
+```
 
-
-### Access the website via http://localhost:3000 or API via
-http://localhist:3000/api.
+Access the website via ``http://localhost:3000`` or API via
+``http://localhist:3000/api``.
