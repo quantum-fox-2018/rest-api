@@ -1,7 +1,11 @@
-## rest-api
-simple rest api with express and MVC
+## My App Name
+Demo app with basic REST API
 
-Route                   HTTP  Description
+## REST API
+List of basic routes:
+
+Route|HTTP|Description
+---|---|---
 /api/hello?name={name}  GET   Print hello, {name} !
 
 List of user routes :
@@ -15,7 +19,8 @@ Route|HTTP|Description
 /api/users/:id  PATCH   Update a user with specific new info
 
 List of filter routes :
-Route                     HTTP  Description
+Route|HTTP|Description
+---|---|---
 /api/users?name="{name}"  GET   Get {name} match in users
 /api/users?name="{na}"    GET   Get {na} like in user
 
