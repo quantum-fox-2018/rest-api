@@ -6,7 +6,7 @@ List of basic routes:
 
 | **Route** | **HTTP** | **Description** |
 | --- | --- | --- |
-| <font color="red"> ```/api/hello?name={name}```</font> | GET | Print Hello, ```{name}``` ! |
+| ``` - /api/hello?name={name}``` | GET | Print Hello, ```{name}``` ! |
 
 List of user routes:
 
