@@ -7,7 +7,6 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "postinstall": "ng build --aot -prod"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
@@ -23,11 +22,8 @@
     "pg": "^7.4.1",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.37.5",
-    "typescript": "~2.3.3"
   },
   "devDependencies": {
-    "@angular/cli": "^1.7.3",
-    "@angular/compiler-cli": "^5.2.9",
-    "enhanced-resolve": "^3.3.0"
+
   }
 }
