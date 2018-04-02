@@ -35,4 +35,5 @@ npm run dev
 Access the website via ```http://localhost:3000``` or API via
 ```http://localhost:3000/api```
 
-```diff - /api/hello?name={name}```
+```diff
+- /api/hello?name={name}```
