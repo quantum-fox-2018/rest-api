@@ -10,7 +10,7 @@ List of basic routes:
 **Route**| **HTTP** | **Description**
 ------------ | ------------- | -------------
 /api/hello?name={name} | GET | Print hello, {name} !
-
+ 
 List of user routes:
 
 **Route** | **HTTP** | **Description**
