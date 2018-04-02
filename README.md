@@ -32,5 +32,5 @@ Route | HTTP | Description
 ```
 npm install
 npm start
-npm run dec
+npm run dev
 ```
