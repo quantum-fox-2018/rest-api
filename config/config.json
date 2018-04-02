@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "hari2018",
+    "database": "database_restapi",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "tlzhxpbprcawyo",
+    "password": "33521ebd658dd6c297943151526fb35c938b55cbe8a093ffe39f8d756ab6b2c9",
+    "database": "d5och2p3g7nmev",
+    "host": "ec2-54-235-109-37.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
