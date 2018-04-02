@@ -1,6 +1,7 @@
 const userSchema = require ('../models/users.model')
 const bcrypt = require('bcrypt')
 const salt = bcrypt.genSaltSync(10)
+const jwt = require('jsonwebtoken')
 
 class User {
   static read(req,res){
@@ -9,6 +10,25 @@ class User {
       res.status(200).json({
         message:'this is list of users:',
         users
+      })
+    })
+    .catch(err=>{
+      res.status(500).json({
+        message:'something went wrong',
+        err
+      })
+    })
+  }
+
+  static readOne(req,res){
+    let target = {
+      _id:req.params.id
+    }
+    userSchema.find(target)
+    .then(user=>{
+      res.status(200).json({
+        message:'this is user that you search',
+        user
       })
     })
     .catch(err=>{
@@ -82,6 +102,10 @@ class User {
       message:'something went wrong',
       err
     })
+  }
+
+  static signin(req,res){
+
   }
 }
 
