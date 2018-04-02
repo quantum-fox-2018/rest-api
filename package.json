@@ -1,0 +1,29 @@
+{
+  "name": "rest-api-1",
+  "version": "1.0.0",
+  "description": "Demo app with basic REST API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irsyadpahlapi/rest-api-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irsyadpahlapi/rest-api-1/issues"
+  },
+  "homepage": "https://github.com/irsyadpahlapi/rest-api-1#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.0",
+    "mongodb": "^3.0.5",
+    "mongoose": "^5.0.12",
+    "morgan": "^1.9.0"
+  }
+}
