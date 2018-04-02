@@ -55,8 +55,6 @@ Access the website via [http://localhost:3000](https:www.google.com) or API via 
 - this will be highlighted in red
 ```
 
-[#f03c15]test warna
-
 BlockQuotes
 > Fitrul mau menguasai dunia
 
