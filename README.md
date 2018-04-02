@@ -6,7 +6,7 @@ List of basic routes:
 
 | Route | HTTP | Desription |
 |----------|:-----|:------------:|
-| /api/hello?name={name}  | GET     | Print hello, {name} !   |
+| <span style="color:red">/api/hello?name={name}</span>  | GET     | Print hello, <span style="color:red">{name}</span> !   |
 
 List of user routes:
 
@@ -27,7 +27,7 @@ List of filter routes:
 | /api/users?name="{na}"      | GET | Get {na} like in users |
 
 # Usage
-WIth only npm:
+With only npm:
 ```
 npm install
 npm start
