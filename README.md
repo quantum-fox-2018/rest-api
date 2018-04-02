@@ -8,7 +8,6 @@ List of basic routes:
 |----------|:-----|:------------:|
 | /api/hello?name={name}  | GET     | Print hello, {name} !   |
 
-
 List of user routes:
 
 | Route        | HTTP           | Desription  |
@@ -27,9 +26,7 @@ List of filter routes:
 | /api/users?name="{name}"      | GET | Get {name} match in users |
 | /api/users?name="{na}"      | GET | Get {na} like in users |
 
-
-
-#Usage
+# Usage
 WIth only npm:
 ```
 npm install
