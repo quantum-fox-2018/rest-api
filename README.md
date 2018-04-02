@@ -3,11 +3,14 @@ Demo app with basic REST API.
 
 # REST API
 List of basic routes:
-| Route        | HTTP           | Desription  |
-| ------------- |-------------| -----|
-| /api/hello?name={name}      | GET | Print hello, {name} ! |
+
+| Route | HTTP | Desription |
+|----------|:-----|:------------:|
+| /api/hello?name={name}  | GET     | Print hello, {name} !   |
+
 
 List of user routes:
+
 | Route        | HTTP           | Desription  |
 | ------------- |-------------| -----|
 | /api/users      | GET | Get all the users |
@@ -18,14 +21,13 @@ List of user routes:
 | /api/users/:id      | PATCH | Update a user with specific new info |
 
 List of filter routes:
+
 | Route        | HTTP           | Desription  |
 | ------------- |-------------| -----|
 | /api/users?name="{name}"      | GET | Get {name} match in users |
 | /api/users?name="{na}"      | GET | Get {na} like in users |
 
-| Column 1 | Column 2 | Column 3 | Column 4 |
-|----------|:---------|:--------:|---------:|
-| default  | left     | center   | right    |
+
 
 #Usage
 WIth only npm:
