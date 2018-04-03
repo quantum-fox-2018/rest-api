@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "12nightmare",
+    "database": "rest_api.db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "qyonkogslsmrho",
+    "password": "94ba8bf8e4d75dfe4cd6208cc8530b412a1905fb53652909f1ffe177e3821fc9",
+    "database": "dcqf9krmolvhek",
+    "host": "ec2-54-235-109-37.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "qyonkogslsmrho",
+    "password": "94ba8bf8e4d75dfe4cd6208cc8530b412a1905fb53652909f1ffe177e3821fc9",
+    "database": "dcqf9krmolvhek",
+    "host": "ec2-54-235-109-37.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
