@@ -35,7 +35,7 @@ module.exports = {
     User.findOne({username:req.body.username}).then(data => {
       let check = bcrypt.compareSync(req.body.password, data.password);
       if (check) {
-        let token = jwt.sign({id: data._id,username: data.username,status: data.status},'secretkey')
+        let token = jwt.sign({id: data._id,username: data.username,status: data.status},process.env.SECRET)
         res.status(200).json({
           message: "anda berhasil login",
           token

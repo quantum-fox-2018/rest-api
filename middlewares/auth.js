@@ -4,7 +4,7 @@ module.exports = {
   check : (req,res,next) => {
     if(req.headers.token){
       try {
-        var decoded = jwt.verify(req.headers.token, 'secretkey');
+        var decoded = jwt.verify(req.headers.token, process.env.SECRET);
         if (decoded.status==='admin') {
           next()
         }else{
@@ -26,7 +26,7 @@ module.exports = {
   checktoken : (req,res,next) => {
     if(req.headers.token){
       try {
-        var decoded = jwt.verify(req.headers.token, 'secretkey');
+        var decoded = jwt.verify(req.headers.token, process.env.SECRET);
         if (decoded) {
           next()
         }
