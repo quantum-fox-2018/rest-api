@@ -20,4 +20,6 @@ api.delete('/users/:id', isAuth, apiController.deleteUser) // delete user
 
 api.put('/users/:id', isAuth, apiController.editUser) // edit user
 
+api.patch('/users/:id', isAuth, apiController.editPasswordUser) // edit user
+
 module.exports = api

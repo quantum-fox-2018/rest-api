@@ -148,5 +148,22 @@ module.exports = {
         message: err.message
       })
     })
+  },
+  editPasswordUser: (req,res)=>{
+    User.update({
+      password: req.body.password
+    },{
+      where: {
+        id: req.params.id
+      }, individualHooks: true
+    }).then(()=>{
+      res.status(200).json({
+        message: `data id: ${req.params.id} updated`
+      })
+    }).catch(err=>{
+      res.status(400).json({
+        message: err.message
+      })
+    })
   }
 }

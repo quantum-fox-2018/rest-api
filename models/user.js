@@ -9,11 +9,17 @@ module.exports = (sequelize, DataTypes) => {
     username: DataTypes.STRING,
     password: DataTypes.STRING,
     role: DataTypes.STRING
+  },{
+    hooks: {
+      beforeCreate: (user,options) => {
+        user.password = hasher(user.password)
+      }
+    }
   });
 
-  User.beforeCreate((user) => {
-    user.password = hasher(user.password)
-  })
+  User.hook('beforeUpdate', (user, options) => {
+    user.password = hasher(user.password);
+  });
 
   User.associate = function(models) {
     // associations can be defined here
