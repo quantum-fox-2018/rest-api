@@ -48,8 +48,9 @@ module.exports = {
          .then(user=>{
            let myPlaintextPassword = password;
            let hash = user.password;
+           let secretKey = process.env.keycode;
            bcrypt.compare(myPlaintextPassword, hash, function(err) {
-             let token = jwt.sign({ role: user.role}, "secret");
+             let token = jwt.sign({ role: user.role}, secretKey);
              res.status(200).json({
                message: "login success",
                token: token,
