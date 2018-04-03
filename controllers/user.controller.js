@@ -48,7 +48,7 @@ module.exports = {
                 data: newUser
             })
         }).catch(function(err){
-            res.status(201).json({
+            res.status(400).json({
                 message: err
             })
         })
@@ -64,19 +64,18 @@ module.exports = {
             }
         }).then(function(user){
             if (!user){
-                res.status(200).json({
+                res.status(400).json({
                     message: "email is not found"
                 })
             }else{
-                console.log(user.password)
                 if (bcrypt.compareSync(passwordInput, user.password)){
-                    let token = jwt.sign({email: user.email, role: user.role}, "kuncimas" )
+                    let token = jwt.sign({email: user.email, role: user.role}, process.env.SECRETKEY)
                     res.status(200).json({
                         message: "login succeed",
                         data: token
                     })
                 }else{
-                    res.status(200).json({
+                    res.status(400).json({
                         message: "email/password is not correct"
                     })
                 }
@@ -104,7 +103,7 @@ module.exports = {
 
             })
             .catch(function(err){
-                res.status(200).json({
+                res.status(400).json({
                     message: err
                 })
             })
@@ -113,7 +112,7 @@ module.exports = {
                 message: "update success"
             })
         }).catch(function(err){
-            res.status(200).json({
+            res.status(400).json({
                 message: err
             })
         })
@@ -131,7 +130,7 @@ module.exports = {
             })
         })
         .catch(function(err){
-            res.status(200).json({
+            res.status(400).json({
                 message: err
             })
         })
