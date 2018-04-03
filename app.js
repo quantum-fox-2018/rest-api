@@ -4,6 +4,8 @@ const app = express()
 
 const users = require('./routes/users')
 
+require('dotenv').config()
+
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(morgan('dev'))
@@ -15,3 +17,4 @@ const port = process.env.PORT || 4000;
 app.listen(port, () => {
     console.log(`Server starts on ${port}`)
 })
+

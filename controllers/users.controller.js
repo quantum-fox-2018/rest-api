@@ -53,7 +53,7 @@ module.exports = {
                     console.log(err)
                 } else {
                     if(res2) {
-                        let token = jwt.sign({id: user.id, role: user.role}, 'katakunci')
+                        let token = jwt.sign({id: user.id, role: user.role}, process.env.SECRET)
                         console.log("token=--", token);
                         res.status(200).json({
                             message: "login success",
