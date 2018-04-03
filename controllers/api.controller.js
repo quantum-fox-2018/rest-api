@@ -3,6 +3,7 @@ const {User} = require('../models')
 const jwt = require('jsonwebtoken')
 const {hasher} = require('../helpers/hasher')
 var bcrypt = require('bcrypt')
+const secret = process.env.SECRET
 
 module.exports = {
   signUp: (req,res)=>{
@@ -35,7 +36,7 @@ module.exports = {
       if(user){
         let compare = bcrypt.compareSync(req.body.password, user.password)
         if(compare==true){
-          let token = jwt.sign({id: user.id, role: user.role}, 'menguasai dunia');
+          let token = jwt.sign({id: user.id, role: user.role}, secret);
           res.status(200).json({
             message: 'user found!',
             token: token

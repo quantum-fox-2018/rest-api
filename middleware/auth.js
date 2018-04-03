@@ -1,8 +1,9 @@
 const jwt = require('jsonwebtoken')
+const secret = process.env.SECRET
 
 function isAuth(req,res,next){
   if(req.headers.token){
-    let decoded = jwt.verify(req.headers.token, 'menguasai dunia')
+    let decoded = jwt.verify(req.headers.token, secret)
     console.log(decoded);
     if(decoded.role=='Admin'){
       next()
