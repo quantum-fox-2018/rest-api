@@ -9,10 +9,14 @@ module.exports = {
             if (decode) {
                 next()
             } else {
-                next("belum login")
+                res.status(400).json({
+                    message: "you are not user"
+                })
             }
         } else {
-            next("belum login")
+            res.status(400).json({
+                message: "you are not user"
+            })
         }
     },
 
@@ -24,10 +28,14 @@ module.exports = {
             if (decode.role === "admin") {
                 next()
             } else {
-                next("bukan admin")
+                res.status(400).json({
+                message: "you are not admin"
+                })
             }
         } else {
-            next("bukan admin")
+            res.status(400).json({
+            message: "you are not admin"
+            })
         }
 
     }
