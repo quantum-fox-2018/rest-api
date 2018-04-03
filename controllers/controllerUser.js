@@ -1,6 +1,7 @@
 const models = require('../models');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const secretkey = process.env.SECRET
 const saltRounds = 10;
 
 module.exports = {
@@ -40,14 +41,12 @@ module.exports = {
       }  
     })
     .then(userData => {
-      console.log('LOG', userData);
-      
       bcrypt.compare(plainPassword, userData.password, function(err, found) {
         if (found) {
           let token = jwt.sign({
             username: userData.username,
             role: userData.role
-          }, 'shhhhh')
+          }, secretkey)
 
           res.status(200).send({
             messages: 'User found',
