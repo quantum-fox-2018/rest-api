@@ -3,6 +3,10 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const jwt = require('jsonwebtoken');
 
+// require('dotenv').config()
+const pwdtoken = process.env.pwdtoken
+// console.log(process.env.pwdtoken);
+
 module.exports = {
   signup: function( req, res) {
     let plainPassword = req.body.password;
@@ -35,7 +39,8 @@ module.exports = {
     db.User.findOne({where:{username:username}})
       .then(user =>{
         console.log(user);
-        let token = jwt.sign({id: user.id, role: user.role}, 'tokenpswd')
+        // let token = jwt.sign({id: user.id, role: user.role}, 'tokenpswd')
+        let token = jwt.sign({id: user.id, role: user.role}, pwdtoken)
         bcrypt.compare(password, user.password, function(err, result) {
           if(err){
             // console.log('Password salah');
@@ -118,18 +123,20 @@ module.exports = {
 
     let userId = req.params.id;
     let newPassword = req.body.password;
-
+    console.log(userId);
+    console.log(req.body);
     db.User.findOne({where:{id:userId}})
       .then(userData => {
         if (userData) {
           //datanya ada
           bcrypt.hash(newPassword, saltRounds, function(err, hash) {
             let updateData = {
+              id: userId,
               username: req.body.username,
               password: hash,
               role: req.body.role
             }
-
+            console.log('-------', updateData);
             if(err){
               res.status(500).json({
                 message: err.message

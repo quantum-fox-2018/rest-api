@@ -6,7 +6,12 @@ module.exports = (sequelize, DataTypes) => {
       validate:{
         isAvailable: function(value, msg){
           // console.log(value);
-          User.findAll({where:{username:value}})
+          console.log(this);
+          let where = {username:value}
+          if(this.id !== null){
+            where = {username:value, id: {$ne: this.id}};
+          }
+          User.findAll({where})
               .then(results => {
                 if(results.length != 0){
                   msg(new Error('Username has been used'))

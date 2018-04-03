@@ -1,11 +1,13 @@
 const jwt = require('jsonwebtoken');
+const pwdtoken = process.env.pwdtoken;
 
 module.exports = {
   adminOnly: function(req, res, next){
     let token = req.headers.token;
     // console.log(token);
     if(token){
-      let decoded = jwt.verify(token, 'tokenpswd');
+      //let decoded = jwt.verify(token, 'tokenpswd');
+      let decoded = jwt.verify(token, pwdtoken);
       if(decoded.role === "admin"){
         next()
       }else{

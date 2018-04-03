@@ -4,6 +4,9 @@ const morgan = require('morgan')
 const port = process.env.PORT || 4000;
 //const routes = require('./routes');
 
+require('dotenv').config()
+// console.log('-----------', process.env.pwdtoken);
+
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(morgan('dev'));
