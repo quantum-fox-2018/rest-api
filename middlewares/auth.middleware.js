@@ -15,7 +15,7 @@ module.exports = {
             if(bcrypt.compareSync(req.body.password, user.password)){
                 roleHelper.assignRoleName(user, (role)=>{
                 user.role = role;    
-                let token = jwt.sign({ id: user.id, role:user.role }, 'secretpunyasaya');
+                let token = jwt.sign({ id: user.id, role:user.role }, process.env.SECRET);
                 req.headers.token = token;
                 return next();
                 });
@@ -26,7 +26,7 @@ module.exports = {
     checkToken : function(req, res, next){
         if(req.headers.token){
             try {
-                var decoded = jwt.verify(req.headers.token, 'secretpunyasaya');
+                var decoded = jwt.verify(req.headers.token, process.env.SECRET);
                 req.body.currentUser = decoded;
                 next();
                 } catch(err) {
