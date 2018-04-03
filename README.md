@@ -16,8 +16,11 @@ List of routes:
 With only npm:
 
 ```
-npm install 
-npm start
+run 'npm install'
+configure config.json
+run 'sequelize db:create'
+run 'sequelize db:migrate'
+run 'npm start'
 
 ```
 
