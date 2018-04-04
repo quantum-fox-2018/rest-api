@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken')
 
-const tokenPassword = 'onepiece'
+const tokenPassword = process.env.tokenPassword
 
 module.exports = {
   authAdmin (req, res, next) {

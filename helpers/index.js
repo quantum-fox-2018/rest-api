@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt')
-const saltRounds = 7
+const saltRounds = process.env.saltRounds
 
 module.exports = {
   hashPassword (password) {

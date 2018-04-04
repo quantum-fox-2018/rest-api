@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
 const { User } = require('../models')
-const tokenPassword = 'onepiece'
+const tokenPassword = process.env.tokenPassword
 
 module.exports = {
   signupUser (req, res) {
