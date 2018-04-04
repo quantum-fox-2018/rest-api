@@ -4,7 +4,7 @@ const models = require('../models');
 module.exports = {
     isAdmin: function(req, res, next){
         let token = req.headers.token
-        const decoded = jwt.verify(token, 'hacktiv8');
+        const decoded = jwt.verify(token, process.env.SECRETKEY);
         console.log(decoded.username);
         if(decoded.role == 'admin'){
             return next()
@@ -16,7 +16,7 @@ module.exports = {
     },
     isAuthorized: function(req, res, next){
         let token = req.headers.token
-        const decoded = jwt.verify(token, 'hacktiv8');
+        const decoded = jwt.verify(token, process.env.SECRETKEY);
         models.User.findById({
             id: req.params.id
         })

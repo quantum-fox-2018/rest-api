@@ -26,6 +26,7 @@ module.exports = {
         })
     },
     signIn : function ( req, res ) {
+        console.log('================= Secret key:',process.env.SECRETKEY)
         const password = req.body.password
         const username = req.body.username
         models.User.findOne({
@@ -35,7 +36,7 @@ module.exports = {
             bcrypt.compare(password, dataUser.password)
             .then(function(isSame){
                 if(isSame){
-                    let token = jwt.sign({username: dataUser.username, role: dataUser.role}, 'hacktiv8');
+                    let token = jwt.sign({username: dataUser.username, role: dataUser.role}, process.env.SECRETKEY);
                     console.log('======', token);
                     res.status(201).json({
                         token: token
