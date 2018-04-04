@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const secretkey = process.env.SECRET
 
 module.exports = {
   loginAuth: function (req, res, next) {
@@ -17,7 +18,7 @@ module.exports = {
     let token = req.headers.token;
 
     if (token) {
-      let decoded = jwt.verify(token, 'shhhhh');
+      let decoded = jwt.verify(token, secretkey);
 
       if (decoded.role == 'admin') {
         next();
