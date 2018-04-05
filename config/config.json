@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "fitrul31",
+    "password": "fitrul31",
+    "database": "db-rest-api",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "bvvaufoguxvwvr",
+    "password": "b12780fe78443a3c9c7c3e1861b54aa38d476fe2acf87b425423ec6822be6806",
+    "database": "dbp5rgf45jdtfl",
+    "host": "ec2-54-235-109-37.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
