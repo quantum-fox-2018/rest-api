@@ -1,0 +1,30 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "Demo App with basic REST API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barestu/rest-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barestu/rest-api/issues"
+  },
+  "homepage": "https://github.com/barestu/rest-api#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.0",
+    "pg": "^7.4.1",
+    "sequelize": "^4.37.5"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.0"
+  }
+}

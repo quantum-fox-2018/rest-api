@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "rest_api_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "nbeywctwcmcqpm",
+    "password": "147835930320546e69c05e74393fe4938f781a68bac3c18734dab989f0f17674",
+    "database": "d5ldhv3ujlk285",
+    "host": "ec2-107-21-201-210.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
